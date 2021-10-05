@@ -14,7 +14,6 @@ function showDescrip(e) {
                     document.getElementById(descId).style.display = "none";
                 }
             }
-            option = 1;
         }, 2000);
     });
 }
@@ -29,7 +28,6 @@ function item(props) {
                 <p>Precio: {props.item.precio}</p>
             </div>
             <button onClick={showDescrip}>Mostrar descripcion</button>
-            <button onClick={showProduct} class="mt-2">Mostrar Producto</button>
             <p>Stock: {props.item.stock}</p>
         </div>
     </>;
